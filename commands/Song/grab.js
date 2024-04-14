@@ -30,12 +30,12 @@ module.exports = {
     if (!player.queue || !player.queue.current) return message.channel.send(`**:x: Nothing playing in this server**`);
     //if user is not in the right channel as bot, then return error
     if(player && channel.id !== player.voiceChannel)
-      return message.channel.send(`**:x: You need to be in the same voice channel as Milrato x Rythm to use this command**`);
+      return message.channel.send(`**:x: You need to be in the same voice channel as Kronix x Rythm to use this command**`);
     //Send Information Message
     let date = `${new Date().getFullYear()}-${String(new Date().getMonth()).length ==1 ? "0" + new Date().getMonth() : new Date().getMonth()}-${String(new Date().getDate()).length ==1 ? "0" + new Date().getDate() : new Date().getDate()}`;
     message.author.send(new MessageEmbed()
       .setThumbnail(`https://img.youtube.com/vi/${player.queue.current.identifier}/mqdefault.jpg`)
-      .setURL("https://milrato.eu")
+      .setURL("https://discord.gg/7cRESnhZUm")
       .setColor("GREEN")
       .setTitle("Song saved :musical_note:")
       .setDescription(`[${player.queue.current.title.split("[").join("\[").split("]").join("\]")}](${player.queue.current.uri})\n\n\`Length:\` ${format(player.queue.current.duration).split(" | ")[0]}\n\n\`Requested by:\` ${player.queue.current.requester.username} (${player.queue.current.requester.tag})`)
@@ -47,12 +47,4 @@ module.exports = {
     message.react("📭").catch(e=>console.log("Could not react"))
   }
 };
-/**
- * @INFO
- * Bot Coded by Tomato#6966 | https://github.com/Tomato6966/discord-js-lavalink-Music-Bot-erela-js
- * @INFO
- * Work for Milrato Development | https://milrato.eu
- * @INFO
- * Please mention Him / Milrato Development, when using this Code!
- * @INFO
- */
+
