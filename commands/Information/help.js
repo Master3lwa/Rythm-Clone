@@ -7,13 +7,13 @@ module.exports = {
     aliases: ["h", "halp"],
     cooldown: 4,
     usage: "help",
-    description: "Shows you Help for Milrato x Rythm",
+    description: "Shows you Help for Kronix x Rythm",
     run: async (client, message, args, user, text, prefix) => {
       try{
-        let string = `:white_check_mark: Type \`${prefix}commands\` for a list of Commands\n\n:question: New to **Milrato x Rythm**? Check out our [Rythm's FAQ](https://rythm.fm/docs/faq/)\n\n:page_facing_up: Still need help? [Click here](https://discord.gg/wvCp7q88G3) to join our [Discord server](https://discord.gg/wvCp7q88G3)`
+        let string = `:white_check_mark: Type \`${prefix}commands\` for a list of Commands\n\n:question: New to **Kronix x Rythm**? Check out our [Rythm's FAQ](https://rythm.fm/docs/faq/)\n\n:page_facing_up: Still need help? [Click here](https://discord.gg/7cRESnhZUm) to join our [Discord server](https://discord.gg/7cRESnhZUm)`
         let embed = new MessageEmbed()
-        .setTitle("Milrato x Rythm Help")
-        .setURL("https://milrato.eu")
+        .setTitle("Kronix x Rythm Help")
+        .setURL("https://discord.gg/7cRESnhZUm")
         .setDescription(string)
         if(message.guild.me.permissionsIn(message.channel).has("EMBED_LINKS")){
           message.reply(embed)
@@ -31,12 +31,3 @@ module.exports = {
     }
   }
 }
-/**
-  * @INFO
-  * Bot Coded by Tomato#6966 | https://github.com/Tomato6966/Discord-Js-Handler-Template
-  * @INFO
-  * Work for Milrato Development | https://milrato.eu
-  * @INFO
-  * Please mention Him / Milrato Development, when using this Code!
-  * @INFO
-*/

@@ -30,12 +30,12 @@ module.exports = {
     if (!player.queue || !player.queue.current) return message.channel.send(`**:x: Nothing playing in this server**`);
     //if user is not in the right channel as bot, then return error
     if(player && channel.id !== player.voiceChannel)
-      return message.channel.send(`**:x: You need to be in the same voice channel as Milrato x Rythm to use this command**`);
+      return message.channel.send(`**:x: You need to be in the same voice channel as Kronix x Rythm to use this command**`);
     //Send Information Message
     message.channel.send(new MessageEmbed()
-      .setAuthor("Now Playing ♪", client.user.displayAvatarURL(), "https://milrato.eu")
+      .setAuthor("Now Playing ♪", client.user.displayAvatarURL(), "https://discord.gg/7cRESnhZUm")
       .setThumbnail(`https://img.youtube.com/vi/${player.queue.current.identifier}/mqdefault.jpg`)
-      .setURL("https://milrato.eu")
+      .setURL("https://discord.gg/7cRESnhZUm")
       .setColor("0056bf")
       .setDescription(`[${player.queue.current.title.split("[").join("\[").split("]").join("\]")}](${player.queue.current.uri})\n\n\`${createBar(player)}\`\n\n\`${format(player.position).split(" | ")[0]} / ${format(player.queue.current.duration).split(" | ")[0]}\`\n\n\`Requested by:\` ${player.queue.current.requester.username} (${player.queue.current.requester.tag})`)
     ).catch(e=>{
@@ -44,12 +44,5 @@ module.exports = {
 
   }
 };
-/**
- * @INFO
- * Bot Coded by Tomato#6966 | https://github.com/Tomato6966/discord-js-lavalink-Music-Bot-erela-js
- * @INFO
- * Work for Milrato Development | https://milrato.eu
- * @INFO
- * Please mention Him / Milrato Development, when using this Code!
- * @INFO
- */
+
+ 

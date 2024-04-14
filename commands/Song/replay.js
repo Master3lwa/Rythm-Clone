@@ -30,19 +30,12 @@ module.exports = {
       if (!player.queue || !player.queue.current) return message.channel.send(`**:x: Nothing playing in this server**`);
       //if user is not in the right channel as bot, then return error
       if(player && channel.id !== player.voiceChannel)
-        return message.channel.send(`**:x: You need to be in the same voice channel as Milrato x Rythm to use this command**`);
+        return message.channel.send(`**:x: You need to be in the same voice channel as Kronix x Rythm to use this command**`);
       //seek to the new Seek position
       player.seek(0);
       //Send Success Message
       return message.channel.send(`**:musical_note: Song progress reset :track_previous:**`);
   }
 };
-/**
- * @INFO
- * Bot Coded by Tomato#6966 | https://github.com/Tomato6966/discord-js-lavalink-Music-Bot-erela-js
- * @INFO
- * Work for Milrato Development | https://milrato.eu
- * @INFO
- * Please mention Him / Milrato Development, when using this Code!
- * @INFO
- */
+
+ 
